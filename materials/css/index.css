@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(D:\Ashwin\Github\Disease_Prediction\Images\main_index1.jpeg);
     background-position: center;
@@ -143,4 +143,73 @@ nav .fa{
 }
 .fa-heart-o{
     color: #f44336;
+}
+
+/* For Contact Us Page */
+
+.contact {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-details {
+    width: 300px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #f44336;
+}
+
+.contact-form {
+    width: 500px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media(max-width: 700px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details, .contact-form {
+        width: 100%;
+    }
 }

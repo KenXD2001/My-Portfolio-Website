@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Contact</title>
         <link rel="stylesheet" href="materials/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
         <style>
             .header{
-                 min-height: 100vh;
+                 height: 100%;
                  width: 100%;
                  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(materials/images/index1.jpg);
                  background-position: center;
@@ -35,22 +36,33 @@
                     </ul>
                  </div>
             </nav>
+        </section>
 
-            <div class="text-box">
-                <table cellspacing="50">
-                    <tr>
-                        <td>
-                            <h1>Hi There,</h1>
-                            <h1>I'm Ashwin Bhardwaj</h1>
-                            <p>Welcome to our website, where your health is our top priority!</p>
-                        </td>
-                        <td>
-                            <img src="materials/images/profile_pic.png" alt="ashwin profile picture" height="400" width="400">
-                        </td>
-                    </tr>
-                </table>
+        <section class="contact">
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+    <p><i class="fa fa-envelope"></i> Email: your.email@example.com</p>
+    <p><i class="fa fa-github"></i> Github: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/your.instagram">instagram.com/your.instagram</a></p>
+    <p><i class="fa-brands fa-square-facebook"></i></i> Facebook: <a href="https://www.facebook.com/your.facebook">facebook.com/your.facebook</a></p>
+                </div>
             </div>
-           
+            
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Send">
+                </form>
+            </div>
         </section>
 
 <!----------Footer----------->

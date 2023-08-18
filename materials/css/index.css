@@ -213,3 +213,53 @@ nav .fa{
         width: 100%;
     }
 }
+
+/* About Page */
+
+.half-border {
+    display: inline-block;
+    position: relative;
+}
+
+.half-border::before {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust this value to control the position of the border */
+    left: 0;
+    width: 50%; /* Half of the width */
+    border-bottom: 3px solid #f44336; /* Border color */
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-info .text-box {
+    padding-left: 50px; 
+}
+
+/* Responsive styles */
+@media(max-width: 700px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+}

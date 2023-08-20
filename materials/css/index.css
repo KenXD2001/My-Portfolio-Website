@@ -263,3 +263,87 @@ nav .fa{
         align-items: center;
     }
 }
+
+
+/* Education  */
+.education {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.education-item {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.education-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Add hover effect */
+.education-item:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Responsive styles */
+@media(max-width: 700px) {
+    .education {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Skills section */
+.skills {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-item {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skill-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media(max-width: 700px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}

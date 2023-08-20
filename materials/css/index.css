@@ -347,3 +347,52 @@ nav .fa{
         align-items: center;
     }
 }
+
+/* Work Section */
+.work {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Add hover effect */
+.project-item:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Responsive styles */
+@media(max-width: 700px) {
+    .work {
+        padding: 50px 0;
+    }
+    .project-item {
+        max-width: 80%;
+    }
+}

@@ -11,17 +11,23 @@
                  background-position: center;
                  background-size: cover;
                  position: relative;
-                }
-                
+                } 
         </style>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+        
+        <script src="materials/js/JQuery_offline_3.7.0.js"></script>
+        <script src="materials/js/scripts.js"></script>
 
     </head>
     <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+        
         <section class="header">
             <nav>
                 <h2 style="color: white; font-size: 30px ">ASHWIN</h2>
@@ -46,7 +52,7 @@
                             
                         </td>
                         <td>
-                            <img src="materials/images/profile_pic.png" alt="ashwin profile picture" height="400" width="400">
+                            <img id="dynamicImage" src="materials/images/profile1.png" alt="ashwin profile picture" height="400" width="400">
                         </td>
                     </tr>
                 </table>

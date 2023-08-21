@@ -170,6 +170,41 @@ nav .fa{
     color: #f44336;
 }
 
+/* For Social Icons */
+    /* Common Button Styles */
+    .social-button {
+        display: block; /* Use "block" to stack buttons vertically */
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 10px; /* Add margin to separate buttons vertically */
+      }
+  
+      /* GitHub Button Styles */
+      .github-button {
+        background-color: #333; /* GitHub color */
+      }
+  
+      /* Instagram Button Styles */
+      .instagram-button {
+        background-color: #C13584; /* Instagram color */
+      }
+  
+      /* Facebook Button Styles */
+      .facebook-button {
+        background-color: #1877F2; /* Facebook color */
+      }
+  
+      /* Icon Styles */
+      .social-icon {
+        margin-right: 10px;
+      }
+
+
 .contact-form {
     width: 500px;
     text-align: center;
@@ -339,6 +374,65 @@ nav .fa{
     color: #333;
     margin-top: 10px;
 }
+
+/* Skill Style */
+/* Common Skill Item Styles */
+.skill-item {
+    display: inline-block;
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    position: relative; /* For positioning the icon */
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  /* Box Styles */
+  .box {
+    background-color: #333; /* Default box background color */
+    width: 100%;
+    height: 100px; /* Adjust the box height as needed */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Skill Icon Styles */
+  .skill-icon {
+    font-size: 36px; /* Adjust the icon size as needed */
+    color: #fff; /* Icon color */
+  }
+
+  /* Icon Name Styles */
+  .icon-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* Additional Info Styles */
+  .info {
+    margin-top: 10px;
+  }
+
+  /* Hover Effect */
+  .skill-item:hover {
+    transform: scale(1.05);
+  }
+
+  /* Different Icon Colors */
+  .java .box { background-color: #E76F00; }
+  .python .box { background-color: #357C5E; }
+  .html .box { background-color: #E34C26; }
+  .css .box { background-color: #1572B6; }
+  .javascript .box { background-color: #F7DF1E; }
+  .nodejs .box { background-color: #68A063; }
+  .reactjs .box { background-color: #61DBFB; }
+  .jquery .box { background-color: #0769AD; }
+  .php .box { background-color: #777BB4; }
+  .mysql .box { background-color: #00758F; }
 
 /* Responsive styles */
 @media(max-width: 700px) {
